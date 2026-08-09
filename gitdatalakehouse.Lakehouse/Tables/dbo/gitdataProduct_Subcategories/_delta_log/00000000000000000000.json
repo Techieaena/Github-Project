@@ -1,0 +1,4 @@
+{"protocol":{"minReaderVersion":1,"minWriterVersion":2,"readerFeatures":null,"writerFeatures":null}}
+{"metaData":{"id":"d6463449-d3ba-4391-9db4-fe77999d3c8b","format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"ProductSubcategoryKey\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SubcategoryName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProductCategoryKey\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}}]}","partitionColumns":[],"createdTime":1785929703859,"configuration":{}}}
+{"commitInfo":{"operation":"ReplaceTable","engineInfo":"Mashup Engine/2.156.603.0","additionalCommitInfo":null}}
+{"add":{"path":"089917287ca142c4bd3fa6476562d783.parquet","partitionValues":{},"size":372,"modificationTime":1785929705760,"dataChange":true,"stats":"{\"numRecords\":0,\"minValues\":{},\"maxValues\":{},\"nullCount\":{}}","tags":{"VORDER":"true"}}}

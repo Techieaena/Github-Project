@@ -1,0 +1,5 @@
+Conversion completed successfully at 2026-08-09 07:55:53 UTC time. Latest Metadata file: 19dc00fc-5e5c-404d-b885-f823f378130f/Tables/dbo/gitdataAdventureWorks_Product_Categories/_delta_log/00000000000000000001.json
+=== OneLake Table Format Conversion Details ===
+Status:             Succeeded
+Timestamp (UTC):    2026-08-09 07:55:53
+Latest Metadata:    19dc00fc-5e5c-404d-b885-f823f378130f/Tables/dbo/gitdataAdventureWorks_Product_Categories/_delta_log/00000000000000000001.json
