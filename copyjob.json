@@ -1,0 +1,71 @@
+{
+    "name": "CopyJob_1",
+    "objectId": "0b46fa80-0752-4d6b-a25c-c2fd7b2867fa",
+    "properties": {
+        "jobMode": "Batch",
+        "source": {
+            "type": "DelimitedText",
+            "connectionSettings": {
+                "type": "HttpServer",
+                "externalReferences": {
+                    "connection": "342387f2-0ea3-4e57-8c33-78ac75d63323"
+                }
+            }
+        },
+        "destination": {
+            "type": "LakehouseTable",
+            "connectionSettings": {
+                "type": "Lakehouse",
+                "typeProperties": {
+                    "workspaceId": "897368f4-4c45-48b3-a7ae-8bb8ee0cf8eb",
+                    "artifactId": "19dc00fc-5e5c-404d-b885-f823f378130f",
+                    "rootFolder": "Tables"
+                }
+            }
+        },
+        "policy": {
+            "timeout": "0.12:00:00",
+            "retry": 0
+        }
+    },
+    "activities": [
+        {
+            "id": "bc8ed51f-3fe8-427c-8c77-fa13ac527148",
+            "properties": {
+                "source": {
+                    "datasetSettings": {
+                        "location": {
+                            "type": "HttpServerLocation",
+                            "relativeUrl": "anshlambagit/Fabric-Tutorial/refs/heads/main/Data/AdventureWorks_Customers.csv"
+                        },
+                        "columnDelimiter": ",",
+                        "escapeChar": "\\",
+                        "firstRowAsHeader": true,
+                        "quoteChar": "\""
+                    },
+                    "storeSettings": {
+                        "requestMethod": "GET"
+                    }
+                },
+                "destination": {
+                    "datasetSettings": {
+                        "schema": "dbo",
+                        "table": "HttpServerFile"
+                    },
+                    "applyVOrder": false,
+                    "writeBehavior": "Append"
+                },
+                "enableStaging": false,
+                "translator": {
+                    "type": "TabularTranslator"
+                },
+                "typeConversionSettings": {
+                    "typeConversion": {
+                        "allowDataTruncation": true,
+                        "treatBooleanAsNumber": false
+                    }
+                }
+            }
+        }
+    ]
+}
